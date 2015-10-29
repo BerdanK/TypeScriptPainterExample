@@ -1,0 +1,9 @@
+﻿extends layout
+
+block content
+ 
+   .row
+    ul
+    - each painter in painters
+        li
+            a(href="/painters/" + painter._id) #{painter.name}

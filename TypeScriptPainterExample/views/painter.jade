@@ -1,0 +1,15 @@
+﻿extends layout
+
+block content
+ 
+    .row
+    h1 #{painter.name}
+    h3 #{painter.birthDate}
+    h3 #{painter.description}
+
+    .row
+      - each image in painter.images
+        .col-md-4
+            img(src= image width="200px" height="200px")
+   
+
